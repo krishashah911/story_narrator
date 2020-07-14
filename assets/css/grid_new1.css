@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+.cnc-grid-section {
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+}
+
+.cnc-grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnc-grid:after {
+    clear: both;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cnc-grid:after,
+.cnc-box:before {
+    content: '';
+    display: table;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnc-grid li {
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.cnc-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
+}
+
+.cnc-box a {
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.cnc-box:active,
+.cnc-box:hover {
+    transform: scale(1.05);
+}
+
+.cnc-carousel {
+    margin: 10px;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
+}
+
+.cnc-carousel a {
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cnc-carousel:hover {
+    transform: scale(1.05);
+}
+
+.cnc-img-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cnc-img-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+}
+
+.cnc-img-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cnc-img-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+}
+
+.cnc-img-5 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-img-6 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-img-7 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-img-8 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-img-9 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/9.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-img-10 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url('../images/solutions/10.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnc-clr-1 {
+    background: linear-gradient( rgb(11, 190, 235), rgba(3, 19, 29, 0.171))
+}
+
+.cnc-grid-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cnc-grid-info h3 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 50px 0 50px;
+    text-align: center;
+}
+
+.cnc-about-section {
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    padding: 0 0 10px 0;
+}
+
+.cnc-abt-grid {
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.cnc-abt-grid:after {
+    clear: both;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cnc-abt-grid:after,
+.cnc-abt-box:before {
+    content: '';
+    display: table;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnc-abt-grid li {
+    width: 350px;
+    height: 380px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.cnc-abt-box {
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
+}
+
+.cnc-abt-info {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.cnc-abt-info h3 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+.cnc-abt-info p {
+    padding: 5px 10px 35px 10px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+}
+
+.cnc-abt-info img {
+    padding-top: 20px;
+}
+
+.cnc-caro-info {
+    position: absolute;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cnc-caro-info h3 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+.solution-section {
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    justify-content: space-between;
+    min-height: 40vh;
+}
+
+.solution-section h1 {
+    align-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 50px;
+}
+
+.solution-section p {
+    font-size: 20px;
+}

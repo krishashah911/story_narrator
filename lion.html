@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lion's Share</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid_new1.css">
+    <link rel="stylesheet" href="assets/css/story.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">TALES</a>
+        <ul>
+            <li><a href="index.html#home" onclick="toggle()">Home</a></li>
+            <li><a href="index.html#solutions" onclick="toggle()">Stories</a></li>
+            <li><a href="index.html#about" onclick="toggle()">About</a></li>
+            <li><a href="index.html#contact" onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    
+    <div class="background-color-layer" style="background-image: url('assets/images/solutions/6.png')"></div>
+
+    <section id="solutions" class="solution-page-section cnc-grid-section">
+        <div id="tv" class="center">
+            <br>
+            <h2 style="color: black; font-family: sofia;" >The Lion's Share</h2>
+            <br>
+           <p style="color: black; font-family: sofia;
+  font-size: 22px;"> Once a bear, a wolf and a fox went hunting under the leadership of a lion. Very soon they caught and killed a buffalo. The fox cut the buffalo into four parts. The animals were eagerly waiting to eat their shares.
+Just then the lion roared, "Keep away from the kill and listen to me. I claim one part of the kill because I was your partner in hunting. I claim a second part because I was your leader. I claim a third part because want it for my cubs. If any one wants the fourth I part, come on, fight me and have it."
+The bear, the wolf and the fox let the lion have all the four parts of the kill and walked away quietly.</p>
+<br>
+
+        </div>
+    </section>
+    
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "a45189caae3032565f477bdaa48cc4e62e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+    if (commandData.command === "nextstep") {
+        goread(commandData.option);
+      }
+    if (commandData.command === "previous_step") {
+        goback(commandData.option);
+      }
+    if (commandData.command === "move") {
+        move(commandData.option);
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+    <script type="text/javascript">
+        function toggle() {
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+        }
+        function goread(option) {
+            if (option == "the peacock and the crane") {
+        window.location = 'crane.html'
+        }
+        else if (option == "the croocked tree") {
+            window.location = 'tree.html'
+        }
+        else if (option == "the wolf and the lamb") {
+            window.location = 'lamb.html'
+        }
+        else if (option == "the crows and the pigeon") {
+            window.location = 'pigeon.html'
+        }
+        else if (option == "the saintly tiger") {
+            window.location = 'tiger.html'
+        }
+        else if (option == "the lion's share") {
+            window.location = 'lion.html'
+        }
+        else if (option == "the horse and the donkey") {
+            window.location = 'donkey.html'
+        }
+        else if (option == "the wolf and the flute") {
+            window.location = 'flute.html'
+        }
+        else if (option == "the cat and the fox") {
+            window.location = 'fox.html'
+        }
+        else if (option == "the mountain and the mouse") {
+            window.location = 'mouse.html'
+        }
+    }
+        function goback(option) {
+            if (option == "home") {
+        window.location = 'index.html'
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>

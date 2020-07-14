@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap|Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FA8128;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    background: #0099CC;
+}
+
+.toggle {
+    display: none;
+}
+
+.cnc-top-section {
+    align-content: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+}
+
+.cnc-parallax {
+    background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.308)), url('../images/5.jpg');
+    /*filter: blur(4px);*/
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.cnc-top-section h2 {
+    filter: none;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cnc-top-section p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.cnc-top-section a {
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #fff;
+    color: #111;
+    margin-top: 20px;
+}
+
+.cnc-alt-section {
+    align-content: center;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40vh;
+    padding: 100px 0 0 0;
+}
+
+.cnc-abt-section {
+    padding: 50px 0 50px 0;
+    align-content: center;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.cnc-alt-section h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.cnc-alt-section p {
+    font-size: 18px;
+}
+
+.cnc-alt-color {
+    color: #fff;
+}
+
+.cnc-alt-parallax {
+    background-image: url('../images/2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-page-section {
+    padding-top: 100px;
+    align-content: center;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solution-page-section h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.solution-page-section p {
+    font-size: 18px;
+}
+
+.cnc-alt-color {
+    color: #fff;
+}
+
+/*.cnc-contact-section {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 50px;
+}*/
+
+.test-class {
+    margin: 3rem;
+    padding-left: 40px;
+    align-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#tv {
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    color: white;
+    box-shadow: 20px 20px rgba(0, 0, 0, .15);
+    transition: all .4s ease;
+}
+
+#tv:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+    box-shadow: 10px 10px rgba(0, 0, 0, .25);
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    /* Make the width of box same as image */
+}
+
+.box .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    width: 60%;
+    /* Set the width of the positioned div */
+}
+.footer {
+        width: 100%;
+        /* background: #00121b; */
+        background: #ff9800;
+        display: block;
+    }
+    
+    .inner-footer {
+        width: 95%;
+        margin: auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    
+    .footer-items {
+        width: 25%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    
+    .footer-items p {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 25px;
+        color: #fff;
+    }
+    
+    .footer-items h1 {
+        color: #fff;
+    }
+    
+    .border1 {
+        align-content: center;
+        height: 3px;
+        width: 400px;
+        background: #FF4500;
+        color: #FF4500;
+        background-color: #FF4500;
+        border: 0px;
+    }
+    
+    ul {
+        align-content: center;
+        list-style: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+    
+    ul a {
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    ul a:hover {
+        color: #FF4500;
+    }
+    
+    ul li {
+        margin: 10px 0;
+        height: 25px;
+    }
+    
+    li i {
+        margin-right: 20px;
+    }
+    
+    .social-media {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .social-media a {
+        text-decoration: none;
+    }
+    
+    .social-media i {
+        height: 25px;
+        width: 25px;
+        margin: 20px 10px;
+        padding: 4px;
+        color: #fff;
+        transition: 0.5s;
+    }
+    
+    .social-media i:hover {
+        transform: scale(1.5);
+    }
+    
+    .footer-bottom {
+        padding: 10px;
+        background: #00121b;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+
+
+                <!--  for some other links -->
+
+@media(max-width: 720px) {
+    .cnc-top-section {
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+    }
+    .cnc-alt-section {
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+    }
+    .solution-page-section {
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+    }
+    .solution-section {
+        padding: 50px 50px 50px 50px;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+    }
+    .solution-section h1 {
+        align-content: center;
+        text-align: center;
+    }
+    header ul {
+        position: absolute;
+        top: -100%;
+        Left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #000;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+    header ul li a {
+        margin: 5px 0;
+        font-size: 24px;
+    }
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+    .toggle::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    header.active .toggle::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    .cnc-abt-grid {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box {
+        position: relative;
+        display: flex;
+        /* Make the width of box same as image */
+    }
+    .box .text {
+        position: relative;
+        padding: 45px 0 45px 0;
+        text-align: center;
+        /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial, sans-serif;
+        color: #fff;
+        /* Set the width of the positioned div */
+    }
+}
